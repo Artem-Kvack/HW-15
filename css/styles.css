@@ -40,7 +40,7 @@ img {
   overflow: hidden;
 }
 .container {
-    width: 1000px;
+    width: 1300px;
     margin: 0 auto;
     padding: 0 40px;
 }
@@ -57,23 +57,28 @@ img {
 }
 .test-list-item:nth-child(1) {
    background-color: red;
-   flex-grow: 2; 
+  order: -1;
+  flex-grow: 2;
 }
 .test-list-item:nth-child(5) {
   background-color: yellow;
+  order: -1;
   flex-grow: 2;
 }
  .test-list-item:nth-child(3) {
    background-color: purple;
-   flex-grow: 1;
+  order:  1;
+  flex-grow: 0;
  }
 .test-list-item:nth-child(2) {
     background-color: blue;
-    flex-grow: 1; 
+   order: 1;
+    flex-grow: 0; 
  }
 .test-list-item:nth-child(4) {
     background-color: green;
-     flex-grow: 1;
+   order: 1;
+   flex-grow: 0;
  }
 
  
